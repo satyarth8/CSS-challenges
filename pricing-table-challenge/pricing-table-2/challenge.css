@@ -9,7 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f5f5f5;
+  background-color: #1a1a1a;
 }
 
 .container {
@@ -17,67 +17,120 @@ body {
 }
 
 .header {
-  /* Add your styles here */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-  /* Add your styles here */
+  color:#ff6b6b;
 }
 
 .subtitle {
-  /* Add your styles here */
+  font-size: smaller;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.568);
 }
 
 .pricing-container {
-  /* Add your styles here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
 }
 
 .pricing-card {
-  /* Add your styles here */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:15px;
+  height: max-content;
+  width: 160px;
+  border:1px solid;
+  border-radius: 12px;
+  height: 320px;
+  position: relative;
+  padding: 12px;
 }
 
-.pricing-card:hover {
-  /* Add your styles here */
+.beginner.pricing-card:hover {
+  box-shadow: 0px 0px 10px rgba(163, 163, 163, 0.525);
+}
+
+.warrior.pricing-card:hover {
+  box-shadow: 0px 0px 10px #ff6b6b94;
+}
+.champion.pricing-card:hover {
+  box-shadow: 0px 0px 10px #fed73d8d;
 }
 
 .card-header {
-  /* Add your styles here */
+  margin-top: 8px;
+  font-weight:bolder;
+  font-size: 8px;
+  text-align: center;
+  color: white;
 }
 
 .icon {
-  /* Add your styles here */
+  font-size: 24px;
+  align-self: center;
 }
 
 .popular-tag {
-  /* Add your styles here */
+  position: absolute;
+  top:-10px;
+  font-size: 8px;
+  font-weight: bolder;
+  border-radius: 12px;
+  background-color: #ffd93d;
+  padding: 4px 15px;
 }
 
 .price-block {
-  /* Add your styles here */
+  background-color: rgba(135, 135, 135, 0.119);
+  padding:5px 0px;
+  width: 120px;
+  border-radius: 12px;
 }
 
 .price {
-  /* Add your styles here */
+  font-weight: bolder;
+  font-size:x-large;
+  text-align: center;
 }
 
 .period {
-  /* Add your styles here */
+  font-size: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  color: rgba(181, 181, 181, 0.721);
 }
 
 .features {
-  /* Add your styles here */
+  list-style-type: none;
+  font-size: xx-small;
+  color: white;
 }
 
 .features li {
-  /* Add your styles here */
+  line-height: 2.5;
 }
 
 .features li.disabled {
-  /* Add your styles here */
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.459);
 }
 
 .join-btn {
-  /* Add your styles here */
+  background-color: transparent;
+  padding: 5px 10px ;
+  border-radius: 6px;
+  width:120px;
+  font-size: 8px;
+  font-weight: bold;
 }
 
 .join-btn:hover {
@@ -85,22 +138,56 @@ h1 {
 }
 
 /* Custom Class Modifiers */
-.warrior {
-  /* Add your styles here */
+
+
+.beginner{
+  background-color: #262626;
+  border: 1px solid rgba(255, 255, 255, 0.215);
 }
 
+.beginner .join-btn{
+  border:1.75px solid #ff6b6b;
+  color: #ff6b6b ;
+}
+.beginner .join-btn:hover{
+  background-color: #ff6b6b;
+  color:black;
+}
+.warrior {
+  border: 1px solid #ff6b6b;
+  background-color: #ff6b6b1a;
+}
+
+.warrior .price , .beginner .price{
+  color:#ff6b6b;
+}
+
+.warrior .join-btn {
+  border:1.75px solid #ff6b6b;
+  color: #ff6b6b ;
+}
+
+.warrior .join-btn:hover {
+    background-color: #ff6b6b;
+    color:black;
+}
+
+
 .champion {
-  /* Add your styles here */
+  border: 1px solid #fed83d;
+  background-color: #fed73d1a;
 }
 
 .champion .price {
-  /* Add your styles here */
+  color: #fed83d;
 }
 
 .champion .join-btn {
-  /* Add your styles here */
+  border:1.75px solid #fed83d;
+  color: #fed83d ;
 }
 
 .champion .join-btn:hover {
-  /* Add your styles here */
+  background-color: #fed83d;
+    color:black;
 }
