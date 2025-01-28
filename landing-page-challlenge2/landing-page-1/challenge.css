@@ -1,0 +1,132 @@
+/* Challenge CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border:1px solid white; */
+}
+
+/* Basic styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-image: url(./assets/chaigym.png);
+  padding-bottom: 40px;
+  background-size: cover;
+  background-position-y: 0px;
+  background-blend-mode: overlay;
+  background-color: #2a2a2a;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 40px;
+  background-color: #333333;
+  color: white; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap:8px;
+  font-weight: 600;
+}
+
+.logo img {
+  border-radius: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+  padding:0px 12px;
+  border: 1px solid transparent;
+}
+
+.nav-links a:hover {
+  border: 1px solid orange;
+  border-radius: 15px;
+  
+}
+
+/* Hero section styles */
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap:50px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 30px 0px;
+  gap:10px;
+}
+
+
+.hero-content h1 {
+  font-weight: bolder;
+  color: white;
+  font-size: 42px;
+  
+}
+
+.hero-content p {
+  color:white;
+  font-size: small;
+}
+
+.cta-button {
+  padding:10px 15px;
+  background-color: #ff973d;
+  border:2px solid transparent;
+  font-weight: 400;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  border: 2px solid #ff973d;
+  background-color: transparent;
+  color:white;
+}
+
+/* Features section styles */
+.features {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.728);
+  margin: 0px 5vw;
+  flex-wrap: wrap;
+  border-radius: 24px;
+}
+
+.feature {
+  margin: 20px;
+  border: 1px solid #ff973d;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px 40px;
+}
+
+
+.feature img{
+  
+}
+.feature h3 {
+  color: #ff973d;
+  font-size: small;
+  padding-bottom:5px;
+}
+
+.feature p {
+  color: white;
+  font-size: xx-small;
+}
