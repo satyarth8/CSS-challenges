@@ -23,7 +23,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 40px;
+  padding: 10px 5vw;
   background-color: #333333;
   color: white; 
 }
@@ -57,7 +57,7 @@ body {
 .hero {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 50px;
   gap:50px;
 }
 
@@ -67,33 +67,34 @@ body {
   align-items: center;
   
   padding: 30px 0px;
-  gap:10px;
+  gap:20px;
 }
 
 
 .hero-content h1 {
   font-weight: bolder;
   color: white;
-  font-size: 42px;
+  font-size: 42pt;
   
 }
 
 .hero-content p {
   color:white;
-  font-size: small;
+  font-size: 15pt;
 }
 
 .cta-button {
-  padding:10px 15px;
-  background-color: #ff973d;
+  padding:12px 20px;
+  background-color: #ff7902;
   border:2px solid transparent;
-  font-weight: 400;
+  font-weight:500;
   border-radius: 6px;
   margin-top: 20px;
+  font-size: 12pt;
 }
 
 .cta-button:hover {
-  border: 2px solid #ff973d;
+  border: 2px solid #ff7902;
   background-color: transparent;
   color:white;
 }
@@ -104,16 +105,18 @@ body {
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.728);
   margin: 0px 5vw;
+  padding:5vh 0pt;
   flex-wrap: wrap;
   border-radius: 24px;
 }
 
 .feature {
   margin: 20px;
-  border: 1px solid #ff973d;
+  border: 1px solid #ff7902;
   border-radius: 12px;
   text-align: center;
-  padding: 10px 40px;
+  padding: 10px 30px;
+  width: 300px;
 }
 
 
@@ -121,12 +124,12 @@ body {
   
 }
 .feature h3 {
-  color: #ff973d;
-  font-size: small;
+  color: #ff7902;
+  font-size: 14pt;
   padding-bottom:5px;
 }
 
 .feature p {
   color: white;
-  font-size: xx-small;
+  font-size: medium;
 }
